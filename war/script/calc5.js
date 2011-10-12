@@ -5,7 +5,7 @@ var rightNum = 0;
 
 var inputAnswer = null;
 
-var questionNum = 10;
+var questionNum = 2;
 var progress = 0;
 
 
@@ -26,10 +26,13 @@ function fillProgress(){
 		var context = canvas.getContext('2d');
 		context.clearRect(0, 0, canvas.width, canvas.height);
 		context.fillStyle = "rgb(200, 200, 200)";
-		context.drawRect(0, 0, canvas.width*progress/questionNum-1, canvas.height-1);
-		context.fillStyle = "rgb(0, 255, 0)";
-		context.fillRect(1,1,canvas.width*progress/questionNum-2, canvas.height-2);
-		
+		context.strokeRect(0, 0, canvas.width, canvas.height);
+
+		if(progress>0){
+			context.fillStyle = "rgb(0, 255, 0)";
+			context.fillRect(1,1,canvas.width*progress/questionNum-2, canvas.height-2);
+		}
+
 		context.font = "15pt Verdana";
 		context.fillStyle = "rgb(0, 0, 0)"
 
@@ -72,10 +75,14 @@ function generateQuestion(){
 
 function check(){
 	if((leftNum+rightNum) == answerText){
-		fadeCorrectAnswer();
-		generateQuestion();
 		progress++;
 		fillProgress();
+		if(progress==questionNum){
+			stop();
+		}else{
+			fadeCorrectAnswer();
+			generateQuestion();
+		}
 	}else{
 		fadeIncorrectAnswer();
 	}
@@ -174,9 +181,6 @@ function fadeCorrectAnswer(){
 function drawAnswerAnim(param){
 	var animText = answerText;
 	var canvas = document.getElementById('answer');
-
-	console.log(param.opacity);
-	console.log(param.color);
 
 	if (canvas.getContext){
 		var context = canvas.getContext('2d');
