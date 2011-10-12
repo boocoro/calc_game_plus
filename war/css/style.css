@@ -1,0 +1,85 @@
+body { background-color: #DDDDDD;}
+span#disp{text-shadow: 5px 5px 5px gray;}
+
+span#question{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Verdana', 'Times New Roman';
+    text-shadow: 5px 5px 5px gray;
+}
+
+span#span_answer{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Verdana', 'Times New Roman';
+    text-shadow: 5px 5px 5px gray;
+}
+
+input{
+	width:300px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Verdana', 'Times New Roman';
+    text-shadow: 5px 5px 5px gray;
+}
+
+input#digit{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Verdana', 'Times New Roman';
+    text-shadow: 5px 5px 5px gray;
+}
+
+table#table-01 {
+    border: 1px #E3E3E3 solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table#table-01 th {
+    padding: 5px;
+    border: #E3E3E3 solid;
+    border-width: 0 0 1px 1px;
+    background: #F5F5F5;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+table#table-01 td {
+    width: 100px;
+    padding: 2px;
+    border: 1px #E3E3E3 solid;
+    border-width: 0 0 1px 1px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Verdana', 'Times New Roman';
+
+}
+
+table#table-01 td:hover {
+	background: #e9e4da;
+}
+
+button{
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	padding: 0px;
+	background: -moz-linear-gradient(center bottom, #999999 0%,#ffffff 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #999999),color-stop(1, #ffffff));
+}
+
+button#button-01{
+	width:120px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Verdana', 'Times New Roman';
+}
+
+button#button-02{
+	width:360px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Verdana', 'Times New Roman';
+}
+

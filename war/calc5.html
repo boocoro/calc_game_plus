@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./script/timer5.js"></script>
+	<script type="text/javascript" src="./script/calc5.js"></script>
+	<SCRIPT Language="JavaScript">
+		document.onkeydown = onKeyDown;
+	</SCRIPT>
+</head>
+<body onload="generateQuestion();" onselectstart="return false">
+
+
+	<canvas id="progress" width="300" height="30"></canvas><br/>
+	<canvas id="timer" width="300" height="50"></canvas><br/>
+    <canvas id="question" width="300" height="50"></canvas><br />
+    <canvas id="answer" width="300" height="50"></canvas>
+    <table id="table-01">
+        <tr>
+        	<td colspan="3">
+	        	<button type="button" id="button-02"  onclick="check();">check</button>
+	        </td>
+        </tr>
+        <tr>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('7');">7</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('8');">8</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('9');">9</button>
+	        </td>
+        </tr>
+        <tr>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('4');">4</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('5');">5</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('6');">6</button>
+	        </td>
+        </tr>
+        <tr>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('1');">1</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('2');">2</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('3');">3</button>
+	        </td>
+        </tr>
+        <tr>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="putString('0');">0</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="backSpace();">BS</button>
+	        </td>
+        	<td>
+	        	<button type="button" id="button-01"  onclick="clearAnswer();">clear</button>
+	        </td>
+        </tr>
+
+    </table>
+
+
+  </body>
+</html>
